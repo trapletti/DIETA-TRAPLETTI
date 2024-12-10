@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dieta 3CI</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            overflow-x: hidden;
+            animation: colorShift 10s infinite alternate;
+        }
+        @keyframes colorShift {
+            0% { background: linear-gradient(135deg, #ff9a9e, #fad0c4); }
+            50% { background: linear-gradient(135deg, #fbc2eb, #a6c1ee); }
+            100% { background: linear-gradient(135deg, #84fab0, #8fd3f4); }
+        }
+        header {
+            background-color: #ff6347;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 2em;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            animation: bounceIn 1.5s ease-in-out;
+        }
+        @keyframes bounceIn {
+            0% { transform: scale(0.5); opacity: 0; }
+            60% { transform: scale(1.2); opacity: 1; }
+            100% { transform: scale(1); }
+        }
+        .container {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 15px;
+            width: 350px;
+            text-align: center;
+            font-size: 1.2em;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            position: relative;
+            animation: float 5s infinite alternate;
+        }
+        @keyframes float {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-10px); }
+        }
+        .card .day {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #ff6347;
+            margin: 10px 0;
+        }
+        .card .meal {
+            margin: 10px 0;
+            font-size: 1.1em;
+            color: #555;
+        }
+        .card .emoji {
+            font-size: 2em;
+            animation: rotate 2s infinite alternate;
+        }
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(20deg); }
+        }
+        footer {
+            background-color: #ffa07a;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 1.2em;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .rainbow-text {
+            font-size: 2.5em;
+            font-weight: bold;
+            text-align: center;
+            background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: rainbowMove 3s linear infinite;
+        }
+        @keyframes rainbowMove {
+            0% { background-position: 0%; }
+            100% { background-position: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        🍎 <span class="rainbow-text">Dieta Fantastica</span> 🍊
+        <p>Fatto da Trapletti supportato da Jenzeri e Grena (Sora non ha fatto nulla 😜)</p>
+    </header>
+    <div class="container">
+        <div class="card">
+            <div class="day">Lunedì 🌞</div>
+            <div class="meal">🥣 Colazione: Yogurt con muesli e frutta</div>
+            <div class="meal">🍗 Pranzo: Insalata di pollo e verdure</div>
+            <div class="meal">🍲 Cena: Minestrone e pane integrale</div>
+            <div class="emoji">✨</div>
+        </div>
+        <div class="card">
+            <div class="day">Martedì 🌈</div>
+            <div class="meal">🍞 Colazione: Fette biscottate con marmellata</div>
+            <div class="meal">🍝 Pranzo: Pasta al pomodoro</div>
+            <div class="meal">🐟 Cena: Pesce al forno con zucchine</div>
+            <div class="emoji">🌟</div>
+        </div>
+        <div class="card">
+            <div class="day">Mercoledì 💪</div>
+            <div class="meal">🍓 Colazione: Smoothie di frutta</div>
+            <div class="meal">🥗 Pranzo: Riso integrale e verdure</div>
+            <div class="meal">🍳 Cena: Omelette con spinaci</div>
+            <div class="emoji">🔥</div>
+        </div>
+        <div class="card">
+            <div class="day">Giovedì 🎉</div>
+            <div class="meal">🥐 Colazione: Cornetto e succo</div>
+            <div class="meal">🍛 Pranzo: Pollo al curry</div>
+            <div class="meal">🍜 Cena: Zuppa di lenticchie</div>
+            <div class="emoji">✨</div>
+        </div>
+        <div class="card">
+            <div class="day">Venerdì 🐠</div>
+            <div class="meal">🥞 Colazione: Pancake con miele</div>
+            <div class="meal">🍤 Pranzo: Spaghetti alle vongole</div>
+            <div class="meal">🐟 Cena: Salmone grigliato</div>
+            <div class="emoji">🌟</div>
+        </div>
+        <div class="card">
+            <div class="day">Sabato 🍕</div>
+            <div class="meal">☕ Colazione: Cappuccino e brioche</div>
+            <div class="meal">🥑 Pranzo: Insalata di quinoa</div>
+            <div class="meal">🍕 Cena: Pizza margherita</div>
+            <div class="emoji">🔥</div>
+        </div>
+        <div class="card">
+            <div class="day">Domenica 🌸</div>
+            <div class="meal">🍰 Colazione: Crostata</div>
+            <div class="meal">🍖 Pranzo: Arrosto con patate</div>
+            <div class="meal">🍅 Cena: Bruschette</div>
+            <div class="emoji">✨</div>
+        </div>
+    </div>
+    <footer>
+        IN COLLABORAZIONE CON ARREDAMENTI TRAPLETTI di Trapletti Giacomo 🤑🎨
+    </footer>
+</body>
+</html>
